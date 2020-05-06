@@ -134,9 +134,4 @@ button {
     border: none;
     margin: 40vh;
     cursor: pointer;
-    transition: ease-in 0.3s;
-}
-
-button:hover {
-    transform: scale(1.2);
 }
