@@ -134,7 +134,7 @@ button {
     border: none;
     margin: 40vh;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
+    transition: ease-in 0.3s;
 }
 
 button:hover {
