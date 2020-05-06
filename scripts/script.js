@@ -14,12 +14,12 @@ const images = {
     paper1: document.createElement('img'),
     scissors1: document.createElement('img'),
     set: function(){
-        this.rock.src = "/images/rock.svg";
-        this.paper.src = "/images/paper.svg";
-        this.scissors.src = "/images/scissors.svg";
-        this.rock1.src = "/images/rock.svg";
-        this.paper1.src = "/images/paper.svg";
-        this.scissors1.src = "/images/scissors.svg";
+        this.rock.src = "images/rock.svg";
+        this.paper.src = "images/paper.svg";
+        this.scissors.src = "images/scissors.svg";
+        this.rock1.src = "images/rock.svg";
+        this.paper1.src = "images/paper.svg";
+        this.scissors1.src = "images/scissors.svg";
     }
 }
 
