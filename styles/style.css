@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Paytone+One&family=Rubik+Mono+One&display=swap');
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(98, 219, 104);
+}
+body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Title */
+.title > h1 {
+    margin: 30px;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif, Arial;
+}
+
+.title > p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Paytone One';
+    color: rgb(97, 91, 14);
+}
+/* Game Container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    visibility: visible;
+}
+.pick-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#picture {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+#picture:hover {
+    transform: scale(1.1);
+}
+
+.scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Paytone One';
+}
+
+#player-score, #computer-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#score-text {
+    font-size: 30px;
+}
+
+#score-number {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.game-score{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Notable', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.game-winner {
+    position: fixed;
+    z-index: 90;
+    display: grid;
+    height: 70%;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#game-picks {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgb(98, 219, 104);
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#final-result {
+    margin-top: 200px;
+    font-size: 3rem;
+    font-family: "Notable", sans-serif;
+}
+
+button {
+    font-family: 'Notable';
+    padding: 15px;
+    background-color: rgb(178, 194, 173);
+    border: none;
+    margin: 40vh;
+}
